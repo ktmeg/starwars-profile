@@ -1,3 +1,13 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+
+body {
+    background-color: forestgreen;
+}
+
+}
 .ba {
     border-style: solid;
     border-width: 1px;
@@ -20,7 +30,8 @@
 }
 
 .dib {
-    display: inline-block;
+    display: flex;
+    align-content: center; 
 }
 
 .fw4 {
@@ -28,7 +39,7 @@
 }
 
 .h4 {
-    height: 8rem;
+    height: 10rem;
 }
 
 .mw5 {
@@ -40,11 +51,11 @@
 }
 
 .gray {
-    color: #777;
+    color: green;
 }
 
 .bg-white {
-    background-color: #fff;
+    background-color: wheat;
 }
 
 .pa2 {
