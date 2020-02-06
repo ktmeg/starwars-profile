@@ -12,6 +12,12 @@ fetch('https://swapi.co/api/species/9/')
     function renderData () {
       let keys = Object.keys(starwarsData)
       console.log(keys)
+
+      const ewokPic = document.createElement('img')
+      ewokPic.src = 'https://vignette.wikia.nocookie.net/starwars/images/4/4f/Wicket_RotJ.png/revision/latest?cb=20130622101905'
+      ewokPic.classList.add("br-100", "h4", "w4", "dib", "ba", "b--black-05", "pa2")
+      dataSection.appendChild(ewokPic)
+
       const h1El = document.createElement('h1')
       h1El.innerText = starwarsData.name
       h1El.classList.add("f3", "mb2")
@@ -37,8 +43,5 @@ fetch('https://swapi.co/api/species/9/')
       pEl3.classList.add('f5', 'fw4', 'gray', 'mt0')
       dataSection.appendChild(pEl3)
 
-    //   const imgEl = document.createElement ('img')
-    //   img src = 'https://vignette.wikia.nocookie.net/starwars/images/4/4f/Wicket_RotJ.png/revision/latest?cb=20130622101905'
-    //   data.Section.appendChild(img)
     }
   })
